@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>homework_65</title>
+</head>
+<body>
+
+<script type="application/javascript">
+    // Первое задание
+    list = ['молоко', 'пиво', 'пиво', 'молоко', 'молоко']
+    for (let i = 0; i < list.length; i++) {
+        if (list[i] === 'молоко') {
+            console.log('хорошо');
+        } else if (list[i] !== 'молоко') {
+            console.log('плохо');
+        }
+    }
+</script>
+<script type="application/javascript">
+    // Второе задание
+    numbers = [1, 5, 12, 4, 3]
+    numberstwo = [2, 3, 4, 5, 6, 7, 8, 9, 10]
+    numbersthree = [3, 10, 17]
+
+    function average(num) {
+        let result = 0
+        for (let i = 0; i < num.length; i++) {
+            result += num[i];
+        }
+        return result / num.length
+    }
+
+    console.log(average(numbers))
+    console.log(average(numberstwo))
+    console.log(average(numbersthree))
+</script>
+<script type="application/javascript">
+    // Третье задание
+    function ask_user() {
+        let user_input = prompt('У квадратного стола отпилили один угол. Сколько теперь углов у него стало?: ')
+        switch (user_input) {
+            case '5':
+                alert('Ответ верный!');
+                break;
+            case 'пять':
+                alert('Ответ верный!');
+                break;
+            default:
+                alert('Ответ неверный!');
+                break;
+        }
+    }
+
+    ask_user()
+</script>
+<script type="application/javascript">
+    // Четвертое задание
+    let duck = {
+        name: 'Дональд',
+        color: 'белый',
+        age: 1,
+        toStr() {
+            for (item in duck) {
+                console.log(`${duck[item]},`);
+            }
+        },
+        say() {
+            console.log('кря кря');
+        },
+    };
+    duck.toStr()
+    duck.say()
+</script>
+</body>
+</html>
